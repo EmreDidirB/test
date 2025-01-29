@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sigortambir - Kasko Teklifi</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            padding: 20px 0;
+        }
+
+        .logo {
+            max-width: 200px;
+        }
+
+        .phone-number {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            align-items: center;
+            color: #e31837;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .main-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 40px;
+        }
+
+        .left-section {
+            flex: 1;
+            padding-right: 40px;
+        }
+
+        .kaskoda {
+            background-color: #8e44ad;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 10px;
+            display: inline-block;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .title {
+            font-size: 48px;
+            color: #8e44ad;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .birdenbul {
+            color: #e31837;
+        }
+
+        .car-image {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .right-section {
+            flex: 1;
+            background-color: #e31837;
+            padding: 40px;
+            color: white;
+            border-radius: 20px;
+        }
+
+        .right-section h2 {
+            font-size: 36px;
+            margin-bottom: 30px;
+            line-height: 1.3;
+        }
+
+        .form-container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin-top: 20px;
+        }
+
+        .form-title {
+            color: #e31837;
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        input[type="text"],
+        input[type="tel"],
+        input[type="date"] {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .checkbox-group {
+            margin: 15px 0;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 15px;
+            background-color: #e31837;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .submit-btn:hover {
+            background-color: #c41230;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .social-icons a {
+            color: #e31837;
+            font-size: 24px;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .main-content {
+                flex-direction: column;
+            }
+
+            .left-section {
+                padding-right: 0;
+                margin-bottom: 40px;
+            }
+
+            .title {
+                font-size: 36px;
+            }
+
+            .right-section {
+                width: 100%;
+            }
+
+            .right-section h2 {
+                font-size: 28px;
+            }
+
+            .phone-number {
+                position: static;
+                justify-content: center;
+                margin: 20px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="images/logo.jpg" alt="Sigortambir Logo" class="logo">
+            <div class="phone-number">
+                <img src="images/phone-icon.jpg" alt="Telefon">
+                0850 800 00 01
+            </div>
+        </header>
+
+        <div class="main-content">
+            <div class="left-section">
+                <div class="kaskoda">Kaskoda</div>
+                <h1 class="title">En Uygun Teklifi<br><span class="birdenbul">BİRDENBUL</span></h1>
+                <img src="images/1.jpg" alt="Kırmızı Araba" class="car-image">
+            </div>
+
+            <div class="right-section">
+                <h2>Sana Özel Avantajları Sigortambir'den Yakala</h2>
+                <img src="images/2.jpg" alt="Hediye Kutusu Tutan Kişi">
+
+                <div class="form-container">
+                    <h3 class="form-title">Kasko Teklif Formu</h3>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Adınız *" required>
+                            <input type="text" placeholder="Soyadınız *" required>
+                            <input type="tel" placeholder="Telefon Numaranız *" required>
+                            <input type="text" placeholder="TC Kimlik Numaranız *" required>
+                            <input type="date" placeholder="Doğum Tarihiniz *" required>
+                        </div>
+
+                        <div class="checkbox-group">
+                            <label>
+                                <input type="checkbox" required>
+                                Kişisel verilerimin, Kişisel Verilerin Korunma Kanunu'na uygun olarak işlenmesine izin veriyorum.
+                            </label>
+                        </div>
+
+                        <div class="checkbox-group">
+                            <label>
+                                <input type="checkbox">
+                                Kampanyalar ve ürünlerden haberdar olmak için Sigortambir'den ticari elektronik ileti almak istiyorum.
+                            </label>
+                        </div>
+
+                        <button type="submit" class="submit-btn">GÖNDER</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="social-icons">
+            <a href="#" target="_blank">Facebook</a>
+            <a href="#" target="_blank">Twitter</a>
+            <a href="#" target="_blank">Instagram</a>
+            <a href="#" target="_blank">YouTube</a>
+            <a href="#" target="_blank">LinkedIn</a>
+        </div>
+    </div>
+</body>
+</html> 
